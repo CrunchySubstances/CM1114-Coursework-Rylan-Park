@@ -11,6 +11,7 @@
         <nav></nav>
 
         <main>
+
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="img_gallery.html">Gallery</a></li>
@@ -22,18 +23,30 @@
                 <h3>Hello</h3>
                 <p>This is a paragraph</p>
             </div>
+
             <form>
                 <fieldset>
                     <legend>Contact us using the below form.</legend>
 
                     <label for="name">Name:</label>
-                    <input for="text" name="name" value=""></input>
+                    <input type="text" name="name" value=""></input>
                     <label for="email">Email:</label>
-                    <input for="email" email="email"></input>
-
+                    <input type="email" name="email" value=""></input>
+                    <label for="member">Membership:</label>
+                    <input type="checkbox" name="Membership"></input>
+                    <label for="Contact Reason">Contact Reason</label>
+                    <select name="Contact Reason">   
+                        <option value="Time Wasting">Time Wasting</option>
+                        <option value="Events">Events</option>
+                        <option value="Membership">Membership</option>
+                        <option value="Issue">Issue</option>
+                    </select>
+                    <label for="file">Attatchment</label>
+                    <input type="file" name="file">
                 </fieldset>
 
             </form>
+
         </main>
 
         <aside></aside>
