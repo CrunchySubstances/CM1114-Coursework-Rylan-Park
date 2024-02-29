@@ -1,7 +1,20 @@
 body{
-    background-image: url("images/compsoc_backround.jpg") ;
-/* }linear-gradient(45deg,cadetblue,darkblue,purple); */
+    background-image:linear-gradient(45deg,cadetblue,darkblue,purple);
 }
+
+content{
+    color:black
+}
+border{
+    color: blue;
+}
+padding{
+    color:antiquewhite
+}
+margin{
+    color:blueviolet
+}
+
 header {
     color:#00a7d1;
     border-top-left-radius: 5px;
@@ -9,6 +22,7 @@ header {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-left: 10px;
+    margin: 10px;
     background-image:linear-gradient(315deg,cadetblue,darkblue,purple);
     h1{
         color:#00a7d1;
@@ -43,6 +57,7 @@ nav li{
 table{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
+    border: 25px;
     td{
         border:2px;
         border-style: solid;
