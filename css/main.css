@@ -1,18 +1,38 @@
 body{
-    background-image: url("images/compsoc_backround.jpg") ;
-/* }linear-gradient(45deg,cadetblue,darkblue,purple); */
+    background-image: linear-gradient(45deg,cadetblue,darkblue,purple);
 }
+
 header {
     color:#00a7d1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-bottom: 10px;
+    border: 10px;
+    border: #00a7d1;
+    padding-top: 10px;
     padding-left: 10px;
-    background-image:linear-gradient(315deg,cadetblue,darkblue,purple);
-    h1{
-        color:#00a7d1;
-    } 
+    background-image:linear-gradient(315deg,cadetblue,darkblue,purple);   margin-top: 10px;
+
+}
+#title{
+    position: relative;
+    color:#00a7d1;
+    padding-top: 10px;
+    
+
+}
+#logo{
+
+   float: left;
+   padding-top: 20px;
+
+
+}
+header{
+    padding-bottom: 15px;
+    padding-top: 0px;
 }
 
 nav li{
