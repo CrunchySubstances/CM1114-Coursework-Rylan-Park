@@ -13,26 +13,26 @@ header {
     border: #00a7d1;
     padding-top: 10px;
     padding-left: 10px;
+    margin-left: 10px;
+    height: 120px;
     background-image:linear-gradient(315deg,cadetblue,darkblue,purple);   margin-top: 10px;
 
 }
 #title{
     position: relative;
     color:#00a7d1;
-    padding-top: 10px;
-    
-
+    padding-top: -20px;
 }
-#logo{
-
+header div{
    float: left;
-   padding-top: 20px;
-
-
+   padding-top: 10px;
+   height: 75px;
+   width: 75px;
 }
-header{
-    padding-bottom: 15px;
-    padding-top: 0px;
+
+#text h3{
+    margin: 10px;
+    font-weight: bold;
 }
 
 nav li{
@@ -42,7 +42,11 @@ nav li{
     accent-color: cadetblue;
     background-color:#00a7d1;
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    float: left;
+    width: 15%;
+    padding: 16px;
+    font-weight: bold;
 
     a{
         color:purple;
@@ -61,7 +65,7 @@ nav li{
 }
 
 table{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     border-collapse: collapse;
     td{
         border:2px;
@@ -87,7 +91,7 @@ table{
 
 h1,h2,h3,h4,h5,h6,p{
     color:cadetblue;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     padding-left: 10px;
 }
 
@@ -105,19 +109,38 @@ p{
 
 main{
     background-image: linear-gradient(315deg,cadetblue,darkblue,purple);
+    margin-left: 10px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 20px;
     padding-bottom: 100px;
+    margin-top: 20px;
+    h3{
+        padding-top: 100px;
+    }
     p{
+        padding-top: 20px;
         padding-left:15px;
         padding-right: 500px;
     }
+}
+
+#left-col{
+    float: left;
+    padding: 10px;
+    background-image: linear-gradient(315deg,cadetblue,darkblue,purple);
+    color: #00a7d1;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+#right-col{
+    float: right;
 }
 
 aside{
     background-image: linear-gradient(315deg,cadetblue,darkblue,purple);
     border-radius:10px;
     padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 footer{
     p{
