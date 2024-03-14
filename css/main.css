@@ -23,16 +23,32 @@ header {
     color:#00a7d1;
     padding-top: -20px;
 }
-header div{
-   float: left;
-   padding-top: 10px;
-   height: 75px;
-   width: 75px;
+
+#logo{
+    float: left;
+    padding-top: 10px;
+    height: 75px;
+    width: 75px;
 }
 
-#text h3{
+#text h2{
+    padding-top: 15px;
     margin: 10px;
     font-weight: bold;
+}
+
+.carousel-inner{
+    margin: 10px;
+    padding-right: 30px;
+}
+
+.carousel-caption p{
+    text-align: center;
+}
+
+#carouselExampleCaptions{
+    height: 40%;
+    margin-top: 110px;
 }
 
 nav li{
@@ -44,9 +60,12 @@ nav li{
     list-style-type: none;
     /* font-family: Arial, Helvetica, sans-serif; */
     float: left;
-    width: 15%;
+    width: 19%;
     padding: 16px;
     font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    margin: 1px;
 
     a{
         color:purple;
@@ -62,6 +81,26 @@ nav li{
     .active{
         background-color: cadetblue;
     }
+}
+
+#login{
+    float:right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.gallery-img{
+    width: 100%;
+    border-bottom: solid rgba(0,0,0,0) 5px;
+}
+#img-gallery{
+    padding-top: 10px;
+    border: 10px;
+    border: 10px;
+
+}
+#img-gallery .row{
+    margin-bottom: 10px;
 }
 
 table{
@@ -93,7 +132,12 @@ h1,h2,h3,h4,h5,h6,p{
     color:cadetblue;
     /* font-family: Arial, Helvetica, sans-serif; */
     padding-left: 10px;
+    text-align: center;
+    float: none;
+
 }
+
+
 
 h1{
     font-size:xx-large;
@@ -104,7 +148,13 @@ h3{
 }
 
 p{
-    font-size:medium
+    font-size: large;
+    font-weight: bold;
+    /* background: purple; */
+    background: linear-gradient(90deg,purple 100%,cadetblue 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 main{
@@ -120,7 +170,6 @@ main{
     p{
         padding-top: 20px;
         padding-left:15px;
-        padding-right: 500px;
     }
 }
 
