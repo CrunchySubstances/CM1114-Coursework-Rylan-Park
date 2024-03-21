@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></link>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-        <body>
-          <header>
-              <div id="logo" alt="logo">
-                  <img src="images/logo.png" height="75" width="75"></img>  
-              </div>
-              <img id="title" src="images/Blue Glow Half Logo.svg" height="100" width="375"  alt="thumbnail"></img>
-          
-          <div id="login">
-            
-            <form>
-                <input type="email" name="email" placeholder="email" value=""></input>
-                <input type="password" name="password" placeholder="password" value=""></input>
-            </form>
-            <button type="button" onclick='login(this)'>Login</button>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>RGU Computing Society</title>
+    <!-- Link Bootstrap and the stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <header>          
+    <div id="logo">
+      <!-- Computing Society Logo -->
+      <img src="images/logo.png" height="75" width="75" alt="logo">
+    </div>
+      <!-- Computing Society Blue Glow Full Logo -->
+      <img id="title" src="images/BlueGlowHalfLogo.svg" height="100" width="375" alt="thumbnail">
+  
+    <div id="theme-switcher">
+      <button type="button" onclick="theme()">button</button>
+    </div>
+
+    <!-- login form in header -->
+    <div id="login">
+      <form>
+        <input type="email" name="email" placeholder="email" value="">
+        <input type="password" name="password" placeholder="password" value="">
+      </form>
+        <button type="button" onclick='login(this)'>Login</button>
+    </div>
+
+  </header>
+
+  <body>
+
+    <main>
+
+      <nav>
+        <ul>
+            <!-- List of links to other pages -->
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- carousel of images -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div id = "carousel-inner" class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Kyle.jpg" class="d-block w-100" height="500" alt="Kyle">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kyle</h5>
+              <p></p>
+            </div>
           </div>
-        </header>
+          <div class="carousel-item">
+            <img src="images/Kyle.jpg" class="d-block w-100" height="500" alt="Kyle">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kyle</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Kyle.jpg" class="d-block w-100" height="500" alt="Kyle">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kyle</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-          <main>
+      <!-- description of the society -->
+      <div id="text">
+        <h2>Welcome to the RGU Computing Society</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
 
-              <nav>
-                  <ul>
-                      <li class="active"><a href="index.html">Home</a></li>
-                      <li><a href="img_gallery.html">Gallery</a></li>
-                      <li><a href="current_members.html">Members</a></li>
-                      <li><a href="event_calendar.html">Events</a></li>
-                      <li><a href="contact_us.html">Contact</a></li>
-                  </ul>
-              </nav>
-              
-              <div id="carouselExampleCaptions" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                  <div id = "carousel-inner" class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="images/Kyle.jpg" class="d-block w-100" width="auto" height="500px"alt="Kyle">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Kyle</h5>
-                        <p></p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="images/Kyle.jpg" class="d-block w-100" width="auto" height="500px" alt="Kyle">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Kyle</h5>
-                        <p></p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="images/Kyle.jpg" wclass="d-block w-100" width="auto" height="500px" alt="Kyle">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Kyle</h5>
-                        <p></p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              <div id="text">
-                  <h2>Welcome to the RGU Computing Society</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
+    </main>
 
-        </main>
+      <aside>
+          <h3>Latest Tweets</h3>
+      </aside>
 
-
-        <aside>
-            <h3>Latest Tweets</h3>
-        </aside>
-
-        <footer>
-            <p>Copyright Rylan Park</p>
-        </footer>
+      <!-- contact info and copyright notice -->
+      <footer>
+            p>Copyright Rylan Park</p>
+      </footer>
 
     </body>
 
     <script>
       var counter = 2;
-
+      // adds login functionality
       function login(){
         if(counter % 2 == 0){
           alert('You have been logged in!')
@@ -102,7 +118,6 @@
         }
       counter += 1;
       }
-
     </script>
+    
 </html>
-</head>
