@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 
+<!-- to-do:
+2 column on contact us
+event calendar on hover
+threat model on 2more pages-->
+
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
@@ -17,18 +22,26 @@
     </div>
       <!-- Computing Society Blue Glow Full Logo -->
       <img id="title" src="images/BlueGlowHalfLogo.svg" height="100" width="375" alt="thumbnail">
-  
-    <div id="theme-switcher">
-      <button type="button" onclick="theme()">button</button>
-    </div>
 
     <!-- login form in header -->
-    <div id="login">
-      <form>
-        <input type="email" name="email" placeholder="email" value="">
-        <input type="password" name="password" placeholder="password" value="">
+
+    <!--
+    Threat Model
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Embarrassment of the society
+    Threat Impact: Defacement of society website, possible identify theft of members.
+    Threat Mitigation: Login validation, 2FA in place before member images 
+    can be changed, email updates to members whose images have been changed. 
+    -->
+
+    <div>
+      <form id="logind">
+        <input type="email" id="f_email"  placeholder="email">
+        <input type="password" id="f_password" placeholder="password">
       </form>
-        <button type="button" onclick='login(this)'>Login</button>
+        <button type="button" onclick='login()'>Login</button>
     </div>
 
   </header>
@@ -45,6 +58,9 @@
             <li><a href="current_members.html">Members</a></li>
             <li><a href="event_calendar.html">Events</a></li>
             <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="hackathon.html">Hackathon</a></li>
+            <li><a href="social_media.html">Links</a></li>
+            
         </ul>
       </nav>
 
@@ -97,26 +113,33 @@
     </main>
 
       <aside>
-          <h3>Latest Tweets</h3>
+          <h3>Latest News</h3>
+          <img src="images/logo.png" height="75" width="75" alt="logo" id="logoHeadline">
+          <h2>Computing Society Undergoes Drastic Changes</h2>
+          <p>Current members list changes massively following "AGM"</p>
       </aside>
 
       <!-- contact info and copyright notice -->
       <footer>
-            p>Copyright Rylan Park</p>
+            <p>Copyright Rylan Park 2024</p>
       </footer>
 
     </body>
 
     <script>
-      var counter = 2;
-      // adds login functionality
       function login(){
-        if(counter % 2 == 0){
-          alert('You have been logged in!')
+        var email = document.forms["logind"]["f_email"].value;
+        var password = document.forms["logind"]["f_password"].value;
+        if (email == "") {
+          alert("Must enter an email!");
         }else{
-          alert('You have been logged out')
-        }
-      counter += 1;
+          if(password == ""){
+            alert("Must enter a password");
+            }
+          else{
+            alert("Successfully Logged in")
+            }
+          }
       }
     </script>
     

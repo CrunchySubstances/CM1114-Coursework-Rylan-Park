@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 
-    <!--
-    Threat Model
-    Threat Source: External
-    Threat Agent: Human
-    Threat Intention: Intentional
-    Threat Motivation: Embarrassment of the society
-    Threat Impact: Defacement of society website, possible identify theft of members.
-    Threat Mitigation: Login validation, 2FA in place before image gallery images
-    can be changed, email updates to contributors when images have been changed. 
-    -->
-
-
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
@@ -29,7 +17,7 @@
     </div>
       <!-- Computing Society Blue Glow Full Logo -->
       <img id="title" src="images/BlueGlowHalfLogo.svg" height="100" width="375" alt="thumbnail">
-
+  
   </header>
 
     <body>
@@ -50,17 +38,14 @@
         
 
             <div>
-                <h3>Hello</h3>
-                <p>This is a paragraph</p>
+                <h1>RGUHACK24</h1>
+                <p>The 2024 hack was widly popular</p>
             </div>
             <!-- img gallery which blurs on load and unblurs and borders on hover -->
-            <div id="img-gallery" class="container">
+            <div id="img-gallery1" class="container">
                 <div class="row">
                     <div class="col-sm">
                         <img src="images/BearPit.jpg" alt="BearPit" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/Hack24.jpg" alt="Drone" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
                     </div>
                     <div class="col-sm">
                         <img src="images/Kyle.jpg" alt="Kyle" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
@@ -74,7 +59,54 @@
                         <img src="images/SponserPresentation.jpg" alt="SponserPresentation" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
                     </div>
                 </div>
-                
+            </div>
+
+            <div>
+                <h1>RGUHACK23</h1>
+                <p>The 2023 hack was widly popular</p>
+            </div>
+            <!-- img gallery which blurs on load and unblurs and borders on hover -->
+            <div id="img-gallery2" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="BearPit" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="Drone" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="Workshop" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="SponserPresentation" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>RGUHACK22</h1>
+                <p>The 2022 hack was widly popular</p>
+            </div>
+            <!-- img gallery which blurs on load and unblurs and borders on hover -->
+            <div id="img-gallery3" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="Kyle" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="Kyle" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+
+                    </div>
+                    <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="Kyle" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/Kyle.jpg" alt="Kyle" class="gallery-img" onload='blur(this)' onmouseover='highlight(this)' onmouseout="delight(this)">
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -85,9 +117,6 @@
         </footer>
 
         <script>
-            // document.getElementById("gallery-img").addEventListener("load", blur);
-            // document.getElementById("gallery-img").addEventListener("mouseover", highlight);
-            // document.getElementById("gallery-img").addEventListener("mouseout", delight);
             
             // blurs content on page load
             function blur(x) {
@@ -95,7 +124,7 @@
             }
             // highlights content of mouse hover
             function highlight(x) {
-            x.style="border: solid #00a7d1 5px;"
+            x.style="border: solid purple 5px;"
             // x.style="filter: blur(4px);"
             }
             // unhighlights the image when mouse not hover

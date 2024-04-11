@@ -17,9 +17,7 @@
       <!-- Computing Society Blue Glow Full Logo -->
       <img id="title" src="images/BlueGlowHalfLogo.svg" height="100" width="375" alt="thumbnail">
   
-    <div id="theme-switcher">
-      <button type="button" onclick="theme()">button</button>
-    </div>
+
   </header> 
 
     <body>
@@ -33,6 +31,8 @@
                     <li><a href="current_members.html">Members</a></li>
                     <li><a href="event_calendar.html">Events</a></li>
                     <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="social_media.html">Links</a></li>
                 </ul>
             </nav>
 
@@ -85,11 +85,38 @@
                 </tr>
                 
             </table>
+            <form id="event">
+                <p>Want to reccomend an event? Tell us below!</p>
+                <!-- event form for the society -->
+                <fieldset>
+                <label>Event Title:</label>
+                <input type="text" id="event_title" name="Event" value="">
+                <label>Event Date:</label>
+                <input type="date" id="event_date" name="Event" value="">
+                <button type="button" onclick="submit_event()">Submit Event</button>
+                </fieldset>
+                </form>
         </main>
-    
+        <script>
+            function submit_event(){
+                var title = document.forms["event"]["event_title"].value;
+                var date = document.forms["event"]["event_date"].value;
+                if (title == "") {
+                    alert("An event must have a title!");
+                }else{
+                    if(date.length == 0){
+                        alert("Date cannot be 0!");
+                    }
+                    else{
+                        alert("Event Submitted! The Society Will Contact You")
+                    }
+                }
+            }
+        </script>
         <!-- contact info and copyright notice -->
         <footer>
             <p>Copyright Rylan Park</p>
         </footer>
     </body>
+
 </html>
