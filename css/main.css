@@ -21,9 +21,20 @@ header {
 
 }
 
+
+
 th,td{
     padding:10px;
     font-size: 10pt;
+
+}
+
+tr{
+
+    :hover {
+        background-color: #00a7d1;
+        color: black;
+    }
 }
 
 #title{
